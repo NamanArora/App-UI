@@ -4,6 +4,8 @@ import { Alert } from '@/components/ui/alert';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { MoodCheckInData, MoodOption } from './types';
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 type Props = {
     moodData: MoodOption;
 };

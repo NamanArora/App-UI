@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { useMediaQuery } from './useMediaQuery';
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 const CircularProgress = ({ value, color }: { value: any, color: any }) => {
     const radius = 25;
     const circumference = radius * 2 * Math.PI;
