@@ -1,0 +1,55 @@
+/* animations.css */
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(10px, -10px); }
+  }
+  
+  @keyframes flutter {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(30deg); }
+  }
+  
+  @keyframes flutter-left {
+    0%, 100% { transform: rotate(-30deg); }
+    50% { transform: rotate(0deg); }
+  }
+  
+  @keyframes flutter-right {
+    0%, 100% { transform: rotate(30deg); }
+    50% { transform: rotate(0deg); }
+  }
+  
+  @keyframes firefly {
+    0%, 100% { opacity: 0.2; transform: translate(0, 0); }
+    50% { opacity: 1; transform: translate(10px, -10px); }
+  }
+  
+  @keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+  }
+  
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .animate-flutter {
+    animation: flutter 0.2s ease-in-out infinite;
+  }
+  
+  .animate-flutter-left {
+    animation: flutter-left 0.2s ease-in-out infinite;
+  }
+  
+  .animate-flutter-right {
+    animation: flutter-right 0.2s ease-in-out infinite;
+  }
+  
+  .animate-firefly {
+    animation: firefly 3s ease-in-out infinite;
+  }
+  
+  .animate-sway {
+    animation: sway 3s ease-in-out infinite;
+  }
