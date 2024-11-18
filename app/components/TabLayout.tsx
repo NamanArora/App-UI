@@ -1,8 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
-  MessageSquare, Book, Calendar, Users, Star, ArrowRight, Trophy, Brain, Bell, Settings,
-  ChevronDown, Sunrise, Moon, BarChart2, Sparkles
+  MessageSquare, Book, Calendar, Star,
 } from 'lucide-react';
 import WellnessScoreCard from './WellnessScoreCard'
 import FreeBanner from './FreeBanner';
@@ -13,34 +12,11 @@ import TherawinTopbar from './TherawinTopbar';
 
 const TabLayout = () => {
   const [tab, setTab] = useState('home');
-  const [showStats, setShowStats] = useState(false);
-  const hour = new Date().getHours();
-  const greet = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
-
-  const moodData = [
-    { day: 'Mon', score: 75 }, { day: 'Tue', score: 82 },
-    { day: 'Wed', score: 78 }, { day: 'Thu', score: 85 },
-    { day: 'Fri', score: 88 }, { day: 'Sat', score: 90 },
-    { day: 'Sun', score: 85 }
-  ];
 
   return (
 
     <div className="h-screen bg-gradient-to-b from-green-50 via-teal-50 to-emerald-50 font-sans">
       <TherawinTopbar />
-
-      {/* <div className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50">
-        <div className="flex justify-between items-center p-4">
-          <div className="flex flex-col">
-            <div className="text-lg font-semibold text-gray-800">Mindful</div>
-            <div className="text-sm text-gray-600">{greet}, Naman</div>
-          </div>
-          <div className="flex space-x-4">
-            <Bell className="w-6 h-6 text-gray-600" />
-            <Settings className="w-6 h-6 text-gray-600" />
-          </div>
-        </div>
-      </div> */}
 
       <div className="h-[90vh] overflow-y-auto pb-16 pt-26">
         {tab === 'home' && (

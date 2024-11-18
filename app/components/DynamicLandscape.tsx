@@ -5,14 +5,14 @@ import { Card } from '@/components/ui/card';
 import { Sparkles, Sun, Moon } from 'lucide-react';
 import './animation.css';
 
-const GrassBlade = ({ style }) => (
+const GrassBlade = ({ style }: { style: any }) => (
     <div
         className="absolute w-0.5 bg-gradient-to-t from-emerald-600 to-emerald-400 rounded-t-full animate-sway"
         style={style}
     />
 );
 
-const Butterfly = ({ style }) => (
+const Butterfly = ({ style }: { style: any }) => (
     <div className="absolute w-2 h-2 animate-float" style={style}>
         <div className="relative">
             <div className="absolute w-2 h-1.5 bg-yellow-200 rounded-full animate-flutter" />
@@ -22,7 +22,7 @@ const Butterfly = ({ style }) => (
     </div>
 );
 
-const Firefly = ({ style }) => (
+const Firefly = ({ style }: { style: any }) => (
     <div
         className="absolute w-1 h-1 rounded-full bg-yellow-200 animate-firefly"
         style={{
@@ -86,7 +86,7 @@ const DynamicLandscape = () => {
     useEffect(() => {
         if (!mounted) return;
 
-        
+
 
         const updateTime = () => {
             if (timeState === 'auto') {
